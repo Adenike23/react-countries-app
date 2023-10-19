@@ -37,17 +37,17 @@ const Home = () => {
             }
         }
   return (
-    <div className='bg-VeryDarkBlue1 min-h-[100vh]'>
+    <div className='lightModebg bg-VeryDarkBlue1 min-h-[100vh]'>
         <div className='fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[25%]'>{loading && <img src={loadingImage} />}</div>
-        <div className="flex flex-col space-y-4 justify-between items-start px-12 py-7 bg-DarkBlue md:items-center md:flex-row md:space-y-0">
-            <div className='flex bg-VeryDarkBlue1 ps-2 py-2 text-White w-[65%] rounded-lg md:w-[45%] lg:w-[25%]'>
+        <div className="main-top flex flex-col space-y-4 justify-between items-start px-12 py-7 bg-DarkBlue md:items-center md:flex-row md:space-y-0">
+            <div className='inputbox flex bg-VeryDarkBlue1 ps-2 py-2 text-White w-[65%] rounded-lg md:w-[45%] lg:w-[25%]'>
              <i class="ri-search-line"></i>
-             <input onChange={(e)=> setSearchInput(e.target.value)} type="search" name="search" id="" placeholder='Search for a country' className='bg-VeryDarkBlue1 ps-2 outline-none w-[92%]'/>
+             <input onChange={(e)=> setSearchInput(e.target.value)} type="search" name="search" id="" placeholder='Search for a country' className='input bg-VeryDarkBlue1 ps-2 outline-none w-[92%]'/>
             </div>
             
             <div className='text-white'>
-                <div onClick={()=> setToggleRegion(!toggleRegion)} className='flex gap-1 items-center border border-VeryDarkBlue1 bg-VeryDarkBlue1 p-2 rounded-md cursor-pointer'>
-                    <p className='filter text-sm'>Filter By Region</p>
+                <div onClick={()=> setToggleRegion(!toggleRegion)} className='filter flex gap-1 items-center bg-VeryDarkBlue1 p-2 rounded-md cursor-pointer'>
+                    <p className='text-sm'>Filter By Region</p>
                     <p className='text-3xl'><i class="ri-arrow-drop-down-line"></i></p>
                 </div>
 

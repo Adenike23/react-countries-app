@@ -1,6 +1,19 @@
-.dark{
+.lightMode .lightModebg{
     background-color: white;
 }
+.lightMode .country-text, .lightMode .navbar, .lightMode .filter, .lightMode .input, .lightMode .inputbox, .lightMode .back-button{
+    background-color: white;
+}
+.lightMode .country-text, .lightMode .navbar, .lightMode .main-top, .lightMode .filter, .lightMode .input, .lightMode .inputbox, .lightMode .text-content, .lightMode .back-button{
+    color: black;
+}
+.inputbox, .filter, .back-button{
+    box-shadow: 0 0 5px #0003;
+}
+.lightMode .main-top{
+    background-color: rgba(247, 241, 241, 0.917);
+}
+
 .borderDiv{
     box-shadow: 0 0 5px black !important;
 }
