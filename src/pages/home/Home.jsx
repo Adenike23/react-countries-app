@@ -64,7 +64,7 @@ const Home = () => {
         </div>
 
 
-        <div className='grid grid-cols-1 md:gap-8 py-20 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ps-10 mx-auto w-[99%] text-White'>
+        <div className='grid grid-cols-1 md:gap-8 py-20 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-10 text-White'>
                 {allCountries && 
                 allCountries.filter(country => country.name.common.toLowerCase().includes(searchInput.toLowerCase()) || country.region.toLowerCase().includes(searchInput.toLowerCase()))
                .map(country=>(
